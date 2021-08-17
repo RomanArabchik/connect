@@ -1,0 +1,86 @@
+.header {
+  max-height: 100px;
+  margin-bottom: 80px;
+  
+  &__wrapper {
+    display:flex;
+    justify-content: space-between;
+    margin-left: 60px;
+  }
+
+  &__navigation {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img {
+    margin-right: 10px;
+  }
+
+  &__logo-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: $color-title;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    width: 300px;
+  }
+
+  &__menu-link {
+    @include font-header;
+  }
+
+  &__registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__registration-signup {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.5px;
+    color: $head-reg;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__registration-login {
+    margin-left: 60px;
+    width: 160px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: $head-back;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: $head-reg;
+    border-bottom-left-radius: 25%;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $head-reg;
+      color: $head-back;
+    }
+  }
+}

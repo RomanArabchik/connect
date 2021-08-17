@@ -1,0 +1,24 @@
+@mixin font-title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  color: #121212;
+}
+
+@mixin font-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.346154px;
+  color: #404852;
+}
+
+@mixin font-header {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+  color: #21383E;
+}
+

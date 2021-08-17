@@ -1,0 +1,108 @@
+.connect {
+  height: 900px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__text {
+    max-width: 498px;
+    margin-left: 130px;
+  }
+
+  &__title {
+    @include font-title;
+    margin-bottom: 34px;
+  }
+
+  &__description{
+    @include font-description;
+    max-width: 405px;
+  }
+
+  &__img {
+    position: absolute;
+  }
+
+  &__img-dot {
+    position: absolute;
+    top: 423px;
+    left: 80px;
+  }
+
+  &__img-1 {
+    position: absolute;
+    top: 398px;
+    left: 220px;
+  }
+
+  &__img-2 {
+    position: absolute;
+    top: 10px;
+    left: 722px;
+  }
+
+  &__img-3 {
+    position: absolute;
+    top: 398px;
+    left: 1112px;
+  }
+
+
+  &__form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 352px;
+    left: 130px;
+    width: 628px;
+    height: 123px;
+    background: $white;
+    box-shadow: 0px 30px 80px rgba(47, 65, 88, 0.2);
+    border-radius: 10px;
+  }
+
+  &__form-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-text {
+    @include font-description;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    border: none;
+    width: 270px;
+
+    // &::after {
+    //   content: '';
+    //   display: block;
+    //   height: 1px;
+    //   background: $black;
+    // }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    @include font-description;
+    color: $white;
+    width: 190px;
+    height: 67px;
+    background-color: $purple;
+    border-color: $purple;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      color: $purple;
+    }
+  }
+  
+}
