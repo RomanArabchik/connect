@@ -156,6 +156,12 @@
   border: none;
   width: 270px;
 }
+.connect__input::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #000000;
+}
 .connect__input:focus {
   outline: none;
 }

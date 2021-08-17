@@ -77,12 +77,12 @@
     border: none;
     width: 270px;
 
-    // &::after {
-    //   content: '';
-    //   display: block;
-    //   height: 1px;
-    //   background: $black;
-    // }
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background: $black;
+    }
 
     &:focus {
       outline: none;
